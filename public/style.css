@@ -5,6 +5,24 @@ body {
     font-size: 1.4em;
 }
 
+#langChanger{
+    position: absolute;
+    right: 10px;
+    border-radius: 7px;
+    border: 0px;
+    cursor: pointer;
+    transition: .3s;
+    color: #7f0920;
+    background-color: #0a0408;
+    border: 1px solid #0a0408;
+    font-size: .9rem;
+}
+
+#langChanger:hover{
+    color: #0a0408;
+    background-color: #7f0920;
+}
+
 #appTitle {
     text-align: center;
     margin: 0px auto;
@@ -23,6 +41,7 @@ body {
     display: block;
     font-family: 'Fredoka One', sans-serif;
 }
+
 
 #movieInfo {
     width:  65%;
