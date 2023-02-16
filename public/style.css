@@ -1,6 +1,7 @@
 body {
     background-color: #7f0920;
     color: #0a0408;
+    text-align: center;
 }
 
 #appTitle {
@@ -21,6 +22,9 @@ body {
 #movieInfo {
     width:  65%;
     margin:  32px auto;
+    display: flex;
+    justify-content: space-around;
+    transition-duration: .4s;
 }
 
 #movieInfo:after {
@@ -30,7 +34,7 @@ body {
 }
 
 #moviePoster, #movieText {
-    width:  50%;
+    width:  35%;
     float:  left;
 }
 
@@ -60,6 +64,12 @@ img#moviePoster {
     background-color: #B97828;
     color: #fdc238;
     cursor:  pointer;
+    transition-duration: .4s;
+}
+
+#playBtn:hover{
+    background-color: #fdc238;
+    color: #B97828;  
 }
 
 label {
