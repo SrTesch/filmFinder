@@ -2,6 +2,7 @@ body {
     background-color: #7f0920;
     color: #0a0408;
     text-align: center;
+    font-size: 1.4em;
 }
 
 #appTitle {
@@ -9,7 +10,11 @@ body {
     margin: 0px auto;
     display: block;
     font-family: 'Staatliches', sans-serif;
-    font-size: 80px;
+    border: 3px solid black;
+    border-radius: 20px;
+    max-width: fit-content;
+    padding: 1%;
+    margin-bottom: 1%;
 }
 
 #genreForm, #playBtn {
@@ -21,21 +26,33 @@ body {
 
 #movieInfo {
     width:  65%;
-    margin:  32px auto;
+    margin:  10px auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     transition-duration: .4s;
+    border-radius: 20px;
 }
 
 #movieInfo:after {
     content:  "";
     display:  table;
     clear:  both;
+    padding: 0;
+}
+
+#moviePoster{
+    max-height: 400px;
 }
 
 #moviePoster, #movieText {
-    width:  35%;
+    width:  50%;
     float:  left;
+    margin: 10px;
+    max-width: 300px;
+    min-width: 300px;
+    font-size: 1.3rem;
 }
 
 img#moviePoster {
@@ -51,19 +68,19 @@ img#moviePoster {
     line-height: 1.25;
 }
 
-#movieTitle, #movieOverview {
-    padding:  32px;
+#movieTitle{
+    margin: 1%;
 }
 
 #playBtn {
     margin-top: 20px;
-    font-size: 25px;
     padding: 7px 10px;
     border-radius: 10px;
     border-style: none;
     background-color: #B97828;
     color: #fdc238;
     cursor:  pointer;
+    font-size: 1.5rem;
     transition-duration: .4s;
 }
 
@@ -74,7 +91,6 @@ img#moviePoster {
 
 label {
     display: block;
-    font-size: 35px;
     margin-bottom: 5px;
 }
 
@@ -90,18 +106,31 @@ select {
 
 #likeBtn, #dislikeBtn {
     padding: 15px 25px;
-    font-size: 25px;
     border-radius: 12px;
     border-style: none;
     cursor:  pointer;
+    transition-duration: .4s;
 }
 
 #likeBtn {
     background-color: #249e57;
     color: darkgreen;
+    border: 1px solid #249e57;
+}
+
+#likeBtn:hover {
+    background-color: darkgreen;
+    color: #249e57;
 }
 
 #dislikeBtn {
     background-color: #c74a4a;
     color: #910000;
+    border: 1px solid #c74a4a;
+}
+
+#dislikeBtn:hover {
+    background-color: #910000;
+    color: #c74a4a;
+    border: 1px solid #c74a4a;
 }

@@ -84,6 +84,8 @@ const displayMovie = (movieInfo) => {
     const movieTextDiv = document.getElementById('movieText');
     const likeBtn = document.getElementById('likeBtn');
     const dislikeBtn = document.getElementById('dislikeBtn');
+    const movieDiv = document.getElementById('movieInfo');
+    movieDiv.style = "border: 2px solid white;";
   
     // Create HTML content containing movie info
     const moviePoster = createMoviePoster(movieInfo.poster_path);
