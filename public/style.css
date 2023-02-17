@@ -129,6 +129,7 @@ select {
     border-style: none;
     cursor:  pointer;
     transition-duration: .4s;
+    margin-bottom: 20px;
 }
 
 #likeBtn {
@@ -152,4 +153,30 @@ select {
     background-color: #910000;
     color: #c74a4a;
     border: 1px solid #c74a4a;
+}
+
+/*--------footer---------*/
+
+footer{
+    background-color: #0a0408;
+    color: #910000;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 4px;
+    font-size: .8rem;
+}
+
+footer > a {
+    text-decoration: none;
+    color: #910000;
+    transition-duration: .4s;
+    padding: 2px;
+}
+
+footer > a:hover{
+    background-color: #910000;
+    color: #0a0408;
+    border-radius: 5px;
 }
